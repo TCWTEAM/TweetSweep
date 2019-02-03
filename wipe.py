@@ -60,8 +60,7 @@ if __name__ == '__main__':
             ader = csv.reader(csvfile)
             for row in ader:
                 tweetArr.append(row[0])
-    else:
-        exit()
+    
 
     tweets = api.user_timeline(screen_name=twitter_name)
     for tweet in tweets:
